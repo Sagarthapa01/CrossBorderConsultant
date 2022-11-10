@@ -113,7 +113,7 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
-        padding: 30px;
+        padding: 15px;
     }
     
 }
@@ -167,8 +167,11 @@ h3{
 }
 
 @media(max-width: 700px){
-    .row{
+    .row , .rows{
         flex-direction: column;
+    }
+    .rows{
+        width: 100%!important;
     }
 }
 
@@ -578,3 +581,46 @@ h3{
  .course .rowz a {
      color: #777;
  }  
+
+
+ /* DROPDOWN */
+
+ .sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: none;
+    margin-top: 10px;
+    transition: all 3s ease-in-out;
+    width: 160px;
+ }
+ .sub-menu ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+ }
+ .sub-menu ul li a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+ }
+ .destination:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: all 3s ease-in-out;
+ }
+ .sub-menu ul li {
+    padding: 10px;
+    display: block;
+ }
+
+ @media(max-width: 700px){
+    .sub-menu 
+    {
+        position: relative;
+    }
+}
