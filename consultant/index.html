@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,14 +16,27 @@
 
     <section class="header">
         <nav>
-            <a href="index.html"><img src="image/3.png" alt=""></a>
+            <a href="index.html"><img src="image/3.png" alt=""></a> 
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item carousel-image bg-img-1 active">
+                    <img src="https://images.unsplash.com/photo-1545575439-3261931f52f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" class="d-block w-100" alt="..."> 
+                  </div>
+                  <div class="carousel-item carousel-image bg-img-2">
+                   <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="d-block w-100" alt="..."> 
+                  </div>
+                  <div class="carousel-item carousel-image bg-img-3">
+                    <!-- <img src="https://images.unsplash.com/photo-1605050825077-289f85b6cf43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="..."> -->
+                  </div>
+                </div>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
+
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li class="destination"><a>DESTINATION</a>
-                        
+                   <li class="destination"><a>DESTINATION</a> 
                         <div class="sub-menu">
                            <ul>
                                <li> <a href="uk.html">UK</a></li>
@@ -31,8 +45,7 @@
                                <li><a href="australia.html">AUSTRAILA</a></li>
                                <li><a href="newzealand.html">NEW-ZEALAND</a></li>
                            </ul>
-                        </div>
-                       
+                        </div> 
                    </li>
                     <li><a href="ourservices.html">OUR SERVICES</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
@@ -50,7 +63,11 @@
                 place.
             </p>
             <a href="about.html" class="hero-btn">Visit Us To Know More</a>
-        </div>
+        </div>     <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
 
     </section>
 
@@ -173,6 +190,78 @@
     <h1>Enroll For Our Various Online Courses<br> From The Worlds</h1>
     <a href="contact.html" class="hero-btn">CONTACT US</a>
 </section>
+
+
+
+<!-- contact us -->
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ, Road,ABC Building</h5>
+                    <p>Soyambhu,Kathmandu, NPL</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+977- 9808222222</h5>
+                    <p>Sunday to Friday, 10AM to 6PM</p>
+                 </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@crossbroder.com</h5>
+                    <p>Email us for query</p>
+                 </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <p class="contact-qus">Please let us know if you have any query</p>
+            <form action="form-handler.php" method="post">
+                <input type="text"  name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter  Your Email Address" required>
+                <input type="text"  name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message......." required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- footer -->
 

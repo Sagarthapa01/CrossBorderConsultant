@@ -6,7 +6,6 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(image/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -381,9 +380,10 @@ h3{
     font-size: 13px;
 }
 .red-btn{
-    border: 1px solid #009EFF;
+    border: 1px solid #ccc;
     background: transparent;
-    color: #009EFF;
+    color:  #555;
+
 }
 .red-btn:hover{
     color: #fff;
@@ -624,3 +624,27 @@ h3{
         position: relative;
     }
 }
+
+
+/*---carousel----- */
+
+.bg-img-1 {
+    background-image: url(image/a.jpg);
+}
+
+.bg-img-2 {
+    background-image: url(image/a.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(image/a.jpg);
+}
+
+.carousel-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+}
+
